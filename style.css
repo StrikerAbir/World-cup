@@ -4,6 +4,25 @@
     box-sizing: border-box;
     margin: 0;
 }
+@keyframes moving {
+    from {
+
+    }
+    to{
+        transform: scale(.7) rotate(45deg);
+        background-color: rgb(75, 72, 72);
+        border: 1px solid lightgrey;
+    }
+}
+@keyframes img-moving {
+    from {}
+
+    to {
+        transform: scale(.7) rotate(-45deg);
+        background-color: rgb(75, 72, 72);
+        border: 1px solid lightgrey;
+    }
+}
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -56,6 +75,7 @@ article{
     height: 613px;
     width: 581px;
     transition: width 1s, height 1s, transform 1s;
+    animation: img-moving 5s ease-in-out 0.1s infinite alternate;
 }
 .marcelo{
     display: flex;
@@ -66,16 +86,8 @@ article{
     height: 613px;
     width: 581px;
     transition: width 1s, height 1s, transform 1s;
+    animation: moving 5s ease-in-out 0.1s  infinite alternate;
 }
-.marcelo:hover .marcelo-inner-div{
-    background-color: rgb(75, 72, 72);
-    border: 1px solid lightgrey;
-    transform: scale(.7) rotate(45deg);
-}
-.marcelo:hover img{
-    transform:rotate(-45deg);
-}
-
 
 /* footer part*/
 footer{
