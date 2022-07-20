@@ -150,7 +150,7 @@ footer h2{
     }
     .color-btn {
         width: 161px;
-        height: 48px;
+        height: 40px;
         margin:0;
         margin-top: 10px;
     }
@@ -197,9 +197,11 @@ footer h2{
         }
     .blog h1 {
         font-size: 40px;
+        margin-bottom: 15px;
     }
     .blog p{
         font-size: 14px;
+        margin-bottom: 10px;
         width: 316px;
         height: 48px;
         overflow: hidden;
