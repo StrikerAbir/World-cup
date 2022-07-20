@@ -1,0 +1,167 @@
+/* font style poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Header part */
+header{
+    height: 746px;
+}
+.great-show{
+    width: 1321px;
+    height: 646px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    background: #161616;
+    border-radius: 30px;
+}
+
+.great-show article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+article{
+    color: white;  
+}
+.blog{
+    width: 532px;  
+}
+.blog h1{
+    font-size:70px;
+}
+.color-btn{
+    text-decoration: none;
+    color: white;
+    width:187px;
+    height:56px;
+    background: #DD0000;
+    margin-top:30px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+/* marcelo image with transition transform */
+.great-show img {
+    height: 613px;
+    width: 581px;
+    transition: width 1s, height 1s, transform 1s;
+}
+.marcelo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.marcelo-inner-div{
+    height: 613px;
+    width: 581px;
+    transition: width 1s, height 1s, transform 1s;
+}
+.marcelo:hover .marcelo-inner-div{
+    background-color: rgb(75, 72, 72);
+    border: 1px solid lightgrey;
+    transform: scale(.7) rotate(45deg);
+}
+.marcelo:hover img{
+    transform:rotate(-45deg);
+}
+
+/* mobile device */
+@media screen and (max-width:688px){
+    /* header part */
+    header {
+            height: 600px;
+        }
+    
+        .great-show {
+            width: 334px;
+            height: 472px;
+            grid-template-columns: repeat(1,1fr);
+        }
+    
+        .blog {
+            width: 258px;
+            height: 178px;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .blog h1 {
+            font-size: 22px;
+        }
+        .blog p {
+            font-size: 14px;
+            width: 258px;
+            height: 48px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .color-btn {
+            width: 161px;
+            height: 48px;
+            margin:0;
+        }
+    
+        .marcelo-inner-div {
+            height: 233px;
+            width: 245px;
+        }
+    
+        .great-show img {
+            height: 233px;
+            width: 245px;
+        }
+}
+/* tablet device */
+@media screen and (min-width: 689px) and (max-width: 992px){
+    /* header part */
+    header{
+        height:500px;
+    }
+    .great-show{
+        width: 734px;
+        height: 398px;
+    }
+    .blog {
+        width: 316px;
+        height:276px;
+        }
+    .blog h1 {
+        font-size: 40px;
+    }
+    .blog p{
+        font-size: 14px;
+        width: 316px;
+        height: 48px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .color-btn {
+        margin:0;
+        width: 161px;
+        height: 48px;
+    } 
+    .marcelo-inner-div {
+        height: 323px;
+        width: 340px;
+    }
+    .great-show img {
+        height: 323px;
+        width: 340px;
+    }
+}
