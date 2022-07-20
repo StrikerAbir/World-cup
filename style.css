@@ -23,7 +23,7 @@ body {
 
     to {
         transform: scale(.7) rotate(45deg);
-        background-color: rgb(75, 72, 72);
+        background-color: rgb(37, 37, 37);
         border: 1px solid lightgrey;
     }
 }
@@ -35,7 +35,7 @@ body {
 
     to {
         transform: scale(.7) rotate(-45deg);
-        background-color: rgb(75, 72, 72);
+        background-color: rgb(56, 56, 56);
         border: 1px solid lightgrey;
     }
 }
@@ -93,6 +93,138 @@ article{
     transition: width 1s, height 1s, transform 1s;
     animation: moving 5s ease-in-out 0.1s  infinite alternate;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main part*/
+
+main{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.container{
+    width: 1321px;
+    display: flex;
+}
+    /* left part */
+.option-flex{
+    height: 312px;
+    width: 312px;
+    border-radius: 10px;
+    background: #161616;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 24px;
+}
+.option-flex a{
+    height: 64px;
+    width: 252px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#red-btn {
+    background: #DD0000;
+    color: white;
+}
+    /* right part */
+
+.blogs-grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+.team-blog{
+    height: 362px;
+    width: 312px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.blog-details{
+    margin: 20px;
+}
+.victory{
+    font-weight: 500;
+    height: 32px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.team-blog-text{
+    font-size:18px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.time-comment{
+    height: 26px;
+    width: 143px;
+    display: flex;
+    justify-content: space-between;
+}
+.time-comment img{
+    width:24px;
+    height:24px;
+    margin-right:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer part*/
 footer{
