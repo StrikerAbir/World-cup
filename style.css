@@ -20,7 +20,7 @@ body {
             /* Header part */
 @keyframes moving {
     from {
-
+        border: 1px solid #161616;
     }
 
     to {
@@ -32,7 +32,7 @@ body {
 
 @keyframes img-moving {
     from {
-        border: 1px solid rgb(14, 13, 13);
+        border: 1px solid #161616;
     }
 
     to {
@@ -66,6 +66,10 @@ article{
 }
 .blog h1{
     font-size:70px;
+}
+.blog p{
+    color: #FFFFFFCC;
+    font-weight: 400;
 }
 .color-btn{
     text-decoration: none;
@@ -241,7 +245,7 @@ footer h2{
 
     .blog {
         width: 258px;
-        height: 178px;
+        height: 100%;
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -250,12 +254,14 @@ footer h2{
     }
 
     .blog h1 {
-        margin-top: 15px;
+        margin-top: 20px;
         font-size: 22px;
+        width: 228px;
     }
     .blog p {
-        margin-top: 15px;
+        margin-top: 20px;
         font-size: 14px;
+        font-weight: 400;
         width: 258px;
         height: 48px;
         overflow: hidden;
@@ -266,15 +272,15 @@ footer h2{
         width: 161px;
         height: 40px;
         margin:0;
-        margin-top: 10px;
+        margin-top: 16px;
     }
     .marcelo-inner-div {
-        height: 250px;
+        height: 232px;
          width: 245px;
     }
     
     .great-show img {
-        height: 250px;
+        height: 232px;
         width: 245px;
     }
 
